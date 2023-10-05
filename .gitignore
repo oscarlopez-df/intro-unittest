@@ -10,6 +10,9 @@ notebooks/
 *.env
 Pipfile.lock
 
+# Unit testing
+.coverage 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 */__pycache__/
