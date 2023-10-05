@@ -1,0 +1,32 @@
+# Project directories
+keys
+dump 
+
+# Jupyter
+notebooks/
+.ipynb_checkpoints
+
+# Pipenv
+*.env
+Pipfile.lock
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*/*/*/__pycache__/
+*.py[cod]
+*/*.py[cod]
+*/*/*.py[cod]
+*/*/*/*.py[cod]
+*$py.class/
+
+# Vim swap files
+*.swp
+*/*.swp
+*/*/*.swp
+*/*/*/*.swp
+
+
+# Temporales python
+.DS_Store

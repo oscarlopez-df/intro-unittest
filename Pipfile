@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+apache-beam = {extras = ["dataframe", "gcp", "interactive"], version = "*"}
+pytest = "*"
+unittest2 = "*"
+coverage = "*"
+jupyter = "*"
+black = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
