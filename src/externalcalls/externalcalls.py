@@ -7,6 +7,7 @@ Contiene las siguientes funciones:
 """
 
 import requests
+from datetime import datetime
 from mathfuncs.sum import sum
 
 
@@ -41,3 +42,18 @@ def sum_and_post(a, b):
     result = sum(a, b)
     response = requests.post("https://example.com/api/data", json={"result": result})
     return response.json()
+
+
+def post_current_datetime():
+    """
+    Posts the current datetime to a web service.
+
+    Returns:
+        dict: Response from the web service.
+
+    """
+    now_ts = datetime.now().timestamp()
+    response = requests.post("https://example.com/api/data", json={"datetime": now_ts})
+    response_json = response.json()
+    response_json["datetime"] = now_ts
+    return response_json
